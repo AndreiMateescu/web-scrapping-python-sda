@@ -3,3 +3,5 @@ selenium
 undetected_chromedriver
 python-dotenv
 google-genai
+PdfReader
+pypdf
