@@ -1,0 +1,80 @@
+Iată traducerea în română a conținutului:
+
+**Timp pentru practică: PT | PyTorch**
+Frameworkuri de Deep Learning
+Gestionarea pipeline-urilor AI/ML și implementarea sistemelor
+47 de lecții
+Ghid pentru Top 4 filme ale mele (Python)
+Ghid pentru Ce-ar fi dacă (Python)
+Ghid pentru Logica din noi (Python)
+Ghid pentru Organizarea Operațiunilor (Python)
+stăpânirea-git
+git-merged–general
+String-uri Python
+Python IO (Intrare/Ieșire)
+gestionarea fișierelor
+Seturi
+Învățare Supervizată, Nesupervizată și prin Consolidare
+Deep Learning cu Keras, TF și PT
+
+**Hiperparametri în Rețele Neuronale**
+Nu în ultimul rând... hiperparametrii modelului. Spre deosebire de parametrii care sunt învățați în timpul antrenamentului, hiperparametrii sunt setați înainte de începerea procesului de antrenament și au un impact semnificativ asupra eficienței învățării și performanței modelului. În acest capitol, explorăm diverși hiperparametri, specifici rețelelor neuronale și algoritmilor de deep learning.
+
+Inginer AI AIRemot… 270 din 270 de lecții finalizate
+(100%)
+Ieșire din Curs
+
+**Hiperparametrii Rețelei I**
+Înainte de antrenamentul rețelei neuronale trebuie să determinați următorii hiperparametri:
+*   rata de învățare,
+*   numărul de straturi ascunse,
+*   numărul de neuroni din fiecare strat,
+*   numărul de epoci,
+*   dimensiunea lotului (batch size).
+
+Adesea avem atât de multe date încât nu le putem încărca imediat în rețea. Acest lucru ar fi prea intensiv din punct de vedere al memoriei și ar pune o povară mare pe computer. Pentru a gestiona această situație, împărțim datele în bucăți mai mici și le trimitem în rețea una câte una. Aceasta actualizează ponderile rețelei după fiecare pas pentru a potrivi modelul cu datele furnizate.
+Fiecare astfel de bucată de date se numește lot (batch).
+
+**Hiperparametrii Rețelei II**
+O epocă reprezintă o mișcare dus-întors a tuturor datelor disponibile în rețea. Într-o epocă, modelul „vede” toate exemplele posibile din set.
+De ce avem nevoie de mai mult de o epocă? Procesul de învățare al rețelei este iterativ, iar cu cât adăugăm mai multe epoci, cu atât actualizăm mai des ponderile. Ca urmare, modelul învață tiparele din date cu o abordare mai bună. Din păcate, nu există un răspuns clar la întrebarea câte astfel de epoci ar trebui să existe. Depinde de complexitatea sarcinii sau de gradul de variabilitate al datelor.
+
+**Hiperparametrii Rețelei III**
+Să luăm un exemplu: avem un set de date care conține 2000 de elemente. Setăm dimensiunea lotului (batch size) la 50 și numărul de epoci la 100.
+Ca urmare, setul de date va fi împărțit în 40 de loturi. Fiecare dintre acestea va conține 50 de exemple. Ponderile modelului vor fi actualizate după fiecare lot. Vom procesa 40 de loturi în fiecare epocă. Apoi vom actualiza ponderile modelului de același număr de ori.
+
+Inginer AI AIRemot… 270 din 270 de lecții finalizate
+(100%)
+Ieșire din Curs
+
+În 100 de epoci, modelul va „vedea” întregul set de date de 100 de ori. Pe parcursul întregului proces, ponderile vor fi actualizate de 4.000 de ori.
+
+**Rezumatul Modulului**
+Învățarea despre rețelele neuronale implică înțelegerea arhitecturii și a fluxului de lucru computațional al acestor algoritmi AI, inclusiv modul în care procesează datele de intrare prin straturi de neuroni pentru a face predicții.
+Conceptele cheie includ:
+*   neuroni (unități computaționale de bază),
+*   funcții de activare (de exemplu, ReLU, Sigmoid, Softmax) care introduc neliniaritate,
+*   funcții de cost/pierdere (de exemplu, Entropie Încrucișată, MSE, MSA) care măsoară precizia predicției,
+*   și retropropagarea (backpropagation), un algoritm pentru ajustarea parametrilor rețelei pentru a reduce eroarea de predicție.
+
+Rețelele neuronale sunt structurate în straturi de intrare, ascunse și de ieșire, unde neuronii fiecărui strat sunt conectați la neuronii stratului următor prin ponderi și biasuri (bias-uri). Rețeaua învață prin ajustarea acestor ponderi și biasuri folosind algoritmi de optimizare (de exemplu, SGD, Adam) pe baza gradienților calculați în timpul retropropagării.
+
+Pentru a reduce numărul de epoci necesare
+Pentru a evita supraînvățarea (overfitting)
+Pentru a face procesul de antrenament mai puțin intensiv din punct de vedere al memoriei și mai ușor de gestionat
+Pentru a asigura că toate datele sunt văzute în fiecare epocă
+
+Trimite
+
+**Care este scopul împărțirii datelor în loturi (batches) în timpul antrenamentului rețelei neuronale?**
+
+Inginer AI AIRemot… 270 din 270 de lecții finalizate
+(100%)
+Ieșire din Curs
+Următoarea Lecție
+
+Finalizat
+
+Inginer AI AIRemot… 270 din 270 de lecții finalizate
+(100%)
+Ieșire din Curs
